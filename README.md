@@ -116,6 +116,24 @@ The Plex optional feature when enabled, allows you to stream music directly from
 2. Next, you must provide a direct URL to your Plex Media Center. The default port that Plex Media Server runs on is `32400`. You can test that your `PLEX_SERVER` URL is correct, by pasting it into any web browser, and it should load successfully with a login page.
 3. Finally, you must place your plex authentication token into the `PLEX_AUTHTOKEN` field. You can do this by browsing the XML file for a library item. Please follow the [official Plex Support article](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/) to access your token. Once you have access to it, place it into your .env file.
 
+Usage (after the bot is up):
+- `/plex play query:<song>` — search and play from your library.
+- `/plex albums query:<album>` - search and play albums from your library
+- `/plex playlists query:<playlist>` — list your Subsonic playlists and enqueue them.
+
+### Subsonic playback
+Subsonic lets you stream from your Subsonic-compatible server (Subsonic/Airsonic/Navidrome/etc.) using the built-in Subsonic commands. All auth is via `.env`; no Discord login commands are required.
+
+1. Set `ENABLE_SUBSONIC` to `true` in `.env`.
+2. Set your server URL: `SUBSONIC_URL='http://YOUR_IP:PORT'`.
+3. Set credentials: `SUBSONIC_USERNAME` and `SUBSONIC_PASSWORD` (account on your Subsonic server).
+4. Restart the bot so the env vars are picked up.
+
+Usage (after the bot is up):
+- `/subsonic play query:<song>` — search and play from your library.
+- `/subsonic albums query:<album>` - search and play albums from your library.
+- `/subsonic playlists query:<playlist>` — list your Subsonic playlists and enqueue them.
+
 ### DJ Mode
 Elite Music comes with a DJ Mode optional feature, which locks down the use of commands and interactions to members who have the specified DJ Role.
 
