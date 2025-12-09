@@ -34,7 +34,7 @@ The first step is to clone the repository or download it manually as a folder to
 Head over to the download page and download the .zip source code. Next, using a tool such as [7-Zip](https://www.7-zip.org/), extract the files from the .zip folder. You can now move on to the following steps.
 
 #### Download using Git
-An alternative way to download the repository is through the usage of [Git](https://git-scm.com/). If you do not have Git installed, please use the basic download method. Git users can run the command `git clone https://github.com/ThatGuyJacobee/Elite-Bot-Music/tree/main` to automatically clone the repository to a new folder.
+An alternative way to download the repository is through the usage of [Git](https://git-scm.com/). If you do not have Git installed, please use the basic download method. Git users can run the command `gh repo clone ripsawuk/Elite-Music` to automatically clone the repository to a new folder.
 
 #### Continuing the Setup
 Now that you have downloaded the repository, you can continue with the following steps.
