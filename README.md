@@ -119,7 +119,7 @@ The Plex optional feature when enabled, allows you to stream music directly from
 Usage (after the bot is up):
 - `/plex play query:<song>` — search and play from your library.
 - `/plex albums query:<album>` - search and play albums from your library
-- `/plex playlists query:<playlist>` — list your Subsonic playlists and enqueue them.
+- `/plex playlists query:<playlist>` — list your Plex playlists and enqueue them.
 
 ### Subsonic playback
 Subsonic lets you stream from your Subsonic-compatible server (Subsonic/Airsonic/Navidrome/etc.) using the built-in Subsonic commands. All auth is via `.env`; no Discord login commands are required.
