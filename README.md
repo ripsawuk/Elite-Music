@@ -74,13 +74,13 @@ Elite Music now has Docker image and Docker Compose support, allowing you to sim
 You can access the [Docker Image via Docker Hub](https://hub.docker.com/r/thatguyjacobee/elitemusic) which provides the image and the instructions within the description. The instructions to either install via Docker Run or Docker Compose are also provided below. Once you have installed and configured your bot, you will need to add your bot to your server now in order to use it. Follow this [useful guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links) from the discord.js Guide which explains how to do this with great detail if you need help understanding how to do this.
 
 #### Docker Run Command
-You should use the following command to download the image and run it:
+Use the current image and container naming from our compose file:
 ```docker
 docker run -d \
---name=elite-music \
---env-file /path/to/.env \
+--name=elite-subsonic \
+--env-file .env \
 --restart unless-stopped \
-thatguyjacobee/elitemusic:latest
+ripsawuk/elitemusic:latest
 ```
 
 Note: The `--env-file` path is relative to the directory you are running your docker run command from. 
@@ -92,11 +92,11 @@ Use the following for your `docker-compose.yml` file:
 ```yml
 version: '3'
 services:
-    elitemusic:
-        container_name: 'elite-music'
-        image: 'thatguyjacobee/elitemusic:latest'
+    elitesubsonic:
+        container_name: 'elite-subsonic'
+        image: 'ripsawuk/elitemusic:latest'
         env_file: 
-           - /path/to/.env
+           - .env
         restart: unless-stopped
 ```
 
