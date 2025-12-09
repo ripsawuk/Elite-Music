@@ -85,7 +85,7 @@ ripsawuk/elitemusic:latest
 
 Note: The `--env-file` path is relative to the directory you are running your docker run command from. 
 
-See the [.env.sample file](https://github.com/ThatGuyJacobee/Elite-Music/blob/main/.env.example) on the GitHub repository to view and copy over all of the environmental options into your target .env file for the bot.
+See the [.env.sample file](https://github.com/ripsawuk/Elite-Music/blob/main/.env.example) on the GitHub repository to view and copy over all of the environmental options into your target .env file for the bot.
 
 #### Docker Compose
 Use the following for your `docker-compose.yml` file:
