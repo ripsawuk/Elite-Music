@@ -1,5 +1,5 @@
 {
-  "name": "elite-bot-subsonic",
+  "name": "elite-subsonic",
   "version": "1.0.0",
   "description": "Elite Bot's original music feature moved to a separate discord bot.",
   "main": "index.js",

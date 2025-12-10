@@ -94,7 +94,7 @@ version: '3'
 services:
     elitesubsonic:
         container_name: 'elite-subsonic'
-        image: 'ripsawuk/elitemusic:latest'
+        image: 'ripsawuk/elite-subsonic:latest'
         env_file: 
            - .env
         restart: unless-stopped
